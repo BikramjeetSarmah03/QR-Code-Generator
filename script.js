@@ -2,8 +2,6 @@ let qrCode = document.querySelector("img");
 let qrText = document.getElementById('input');
 let download = document.getElementById('download');
 
-// qrBtn.addEventListener("click", generateQR);
-
 function generateQR(){
      let data = qrText.value;
      if(data.length == 0){
