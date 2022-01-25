@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>QR-Code Generator</title>
+
+     <!-- Style -->
+     <link rel="stylesheet" href="/style.css">
+     <!-- JS -->
+     <script src="/script.js" defer></script>
+     <script src="/FileSaver.min.js" defer></script>
+</head>
+<body>
+
+     <header>
+          <nav class="navbar">
+               QR-Code Generator
+          </nav>
+     </header>
+     <main class="main">
+          <div class="input">
+               <label>Enter Your Text Here</label>
+               <textarea class="textarea" id="input" onkeyup="generateQR()"></textarea>
+          </div>
+          <div class="container">
+               <div class="result">
+                    <div class="wrapper">
+                         <img src="/QR-Code Preview.svg" alt="QR-Code">
+                    </div>
+               </div>
+               <button class="btn" id="download" onclick="qrDownload()">Download</button>
+          </div>
+     </main>
+     <footer>
+          This is a footer
+     </footer>
+</body>
+</html>
+
+<!-- <img src="/QR-Code Preview.svg" alt="qr-code"> -->
+<!-- <textarea class="textArea"></textarea> -->
+<!-- <button class="btn btn-primary my-2">Generate QR-Code</button> -->
